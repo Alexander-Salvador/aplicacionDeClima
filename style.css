@@ -17,22 +17,22 @@ body {
 
 .clima__section {
     background-color: #f3fffd;
-    min-width: 700px;
-    height: 15rem;
-    border-radius: 2rem;
+    width: 700px;
+    min-height: 28rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font: italic small-caps bold 16px/1.5 "Arial";
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #6987f3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 0.5em;
+    margin-bottom: 1rem;
 }
 
 .clima__inputAndButton {
@@ -41,36 +41,31 @@ h1 {
     column-gap: 3px;
 }
 
-#enterCity {
-    width: 8rem;
+#escribirCiudad,
+#button__searchWeather {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
     height: 3rem;
-    border-radius: 0.6rem 0 0 0.6rem;
     border: transparent;
-    padding-left: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-#enterCity:focus {
+#escribirCiudad:focus {
     outline: none;
 }
 
-#searchWeather {
-    border-radius: 0 0.6rem 0.6rem 0;
-    border: transparent;
-    width: 4rem;
-    height: 3rem;
-    color: rgb(101, 101, 101);
-    font-size: 15px;
-    font-weight: bold;
-    font-family: sans-serif;
+#button__searchWeather {
     cursor: pointer;
-    background-color: #d1dafa;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
 }
 
-#datosClima {
-    margin-top: 2rem;
+#mostrarInformacion {
     display: flex;
+    transition: all 0.3s ease-in-out;
+    row-gap: 0.5rem;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
 }
